@@ -80,7 +80,7 @@ module Jekyll
       private :main_entity
 
       def to_json
-        to_h.reject { |_k, v| v.nil? }.to_json
+        to_h.reject { |_k, v| v.nil? }
       end
 
       private
